@@ -1,31 +1,45 @@
 # Changelog — Mike Miller Resume Site
 
+## [3.0] — 2026-02-28
+
+### Premium JavaScript Enhancements
+- **GSAP 3 + ScrollTrigger**: Replaced IntersectionObserver with GSAP for all scroll animations. Staggered card reveals, sliding timeline items, parallax on hero background glow.
+- **Animated stat counters**: Stats (39%, ~$1.7M, 100+, 12%) count up from 0 when scrolling into view.
+- **Hero typing animation**: The word "deliver" types out character by character with cursor blink.
+- **Dark/light theme toggle**: Sun/moon toggle in nav. Full light theme with white backgrounds, dark text, blue accents preserved. Smooth transitions.
+- **Scroll progress bar**: 3px blue-to-teal gradient bar at the very top showing scroll progress.
+- **Active nav highlighting**: Current section's nav link highlights as user scrolls.
+- **3D tilt hover effects**: Approach, diff, speak, and cert cards tilt subtly on mouse hover (3-4° max, perspective effect).
+- **Mouse glow cursor effect**: Subtle radial gradient glow follows the mouse across the dark background.
+- **Smooth scroll offset**: Nav links scroll to sections with offset for fixed nav height.
+
+### Documentation
+- **CONTENT.md**: Created single source of truth for all site copy. Any content changes should be made here first, then reflected in index.html.
+- **README.md**: Added developer workflow documentation.
+
+### Technical
+- Added GSAP 3.12.5 + ScrollTrigger from cdnjs CDN.
+- All original content preserved exactly (verified against CONTENT.md).
+- File grew from ~850 lines to ~1380 lines (JS enhancements).
+
+---
+
+## [2.1] — 2026-02-28
+
+### Content Fix
+- Restored all original copy that was accidentally rewritten in v2.0.
+- Added blue `MM.` favicon matching MMD's style but with blue accent instead of purple.
+
+---
+
 ## [2.0] — 2026-02-28
 
 ### Design Overhaul
 - **Color scheme**: Replaced single blue accent with blue-to-teal gradient system (inspired by MMD). Background shifted from `#0f1117` to deeper navy `#0b0f1a`. New token system with `--blue`, `--teal`, `--green`, `--gold` accents.
-- **Typography**: Swapped fonts from Source Serif 4 / Plus Jakarta Sans to **Outfit** (headings) + **Inter** (body) + **JetBrains Mono** (data/labels). Cleaner, more modern, and highly readable.
-- **Cert badges**: Hybrid approach — MMD-style gradient text badges (colored rectangles with abbreviations) arranged in MMRS card layout with full cert name + issuer. Color-coded by org: blue (Scrum Alliance), green (SAFe), orange (ICAgile), indigo (LeSS).
-- **Hero section**: Dropped profile photo. Now text-forward with gradient headline, status tag, and dual CTAs — inspired by MMD's cleaner hero.
-- **Subtle grid background**: Added faint CSS grid lines behind all content for depth.
-- **Card hover effects**: Added blue-to-teal gradient top-border reveal on approach cards and builder note.
-- **Animations**: Kept smooth scroll-reveal fade-ups, added staggered hero entrance animations.
-
-### Content Updates
-- **Metrics**: Updated $1.7M to $1.4M (accurate figure). Changed "PI attendees" to "Teams of people".
-- **All original sections preserved**: Approach, Differentiators, Track Record (with full 8-position timeline), Speaking, Builder Note, Credentials, Tools & Methodologies, CTA.
-
-### Structure
-- **Nav**: Kept "Mike Miller" text branding (no monogram).
-- **CTA**: Kept Email + LinkedIn buttons.
-- **Client list**: Unchanged (Google, SAIC, Midmark, 84.51°, GE, AtriCure, Speedway, Winsupply).
-- **Certs shown twice**: Once near top (social proof position, like MMD) and once in Credentials section (for resume context).
-
-### Technical
-- Added versioning with git tags (v1.0 = pre-redesign, v2.0 = this release).
-- Maintained all GA4 analytics tracking (section views, scroll depth, time on page, CTA clicks).
-- Maintained all structured data (Schema.org Person + ProfessionalService).
-- Single HTML file architecture preserved. No external dependencies beyond Google Fonts.
+- **Typography**: Swapped fonts from Source Serif 4 / Plus Jakarta Sans to **Outfit** (headings) + **Inter** (body) + **JetBrains Mono** (data/labels).
+- **Cert badges**: Hybrid approach — MMD-style gradient text badges arranged in MMRS card layout with full cert name + issuer. Color-coded by org.
+- **Hero section**: Dropped profile photo. Text-forward with gradient headline and dual CTAs.
+- **Grid background, card hover effects, staggered animations.**
 
 ---
 
