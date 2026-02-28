@@ -1,5 +1,39 @@
 # Changelog — Mike Miller Resume Site
 
+## [3.1] — 2026-02-28
+
+### UX & Spacing
+- **Tighter section spacing**: Reduced section padding from 5.5rem to 3.5rem (2.5rem mobile). Less wasted scroll between sections.
+- **Nav shrink on scroll**: Nav bar subtly compresses padding when user scrolls down.
+
+### Light Theme Overhaul
+- **Softer palette**: Light mode background shifted from harsh white to `#eef1f5` with SVG noise texture overlay.
+- **Nav stays dark**: Nav bar keeps its dark appearance in light mode (deliberate design choice, not a bug).
+- **Moon icon**: Theme toggle now swaps between sun and moon SVG icons.
+
+### Nav Branding
+- **MM. — Mike Miller**: Updated nav logo to MMD-style branding with gradient dot and em-dash separator.
+
+### "Clearing the Fog" Concept
+- **Fog overlay**: Semi-transparent mask layer that "clears" around the cursor, tying the mouse glow into the brand message ("I clear the fog so your teams can deliver").
+- **Enhanced mouse glow**: Larger, softer glow (400px, blur 60px) that works with the fog overlay.
+
+### New JS Interactivity
+- **Magnetic buttons**: CTA buttons subtly pull toward the cursor on hover.
+- **Gradient border glow**: Cards reveal a blue-to-teal gradient border on hover.
+- **Breathing box shadows**: Cards pulse with a subtle glow when in viewport.
+- **Floating cert badges**: Cert badges gently float up/down when visible.
+- **Tool pills stagger**: Tool & methodology pills cascade in with staggered delays.
+- **Company logo parallax**: Social proof logos subtly wave on scroll.
+- **Section heading reveals**: Section headers animate in with a slide-up reveal.
+- **Text shimmer**: Hero gradient text has a subtle shimmer animation.
+
+### Technical
+- File grew from ~1380 lines to ~1695 lines (new CSS animations + enhanced JS).
+- All original content preserved exactly.
+
+---
+
 ## [3.0] — 2026-02-28
 
 ### Premium JavaScript Enhancements
