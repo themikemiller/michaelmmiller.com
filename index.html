@@ -213,6 +213,9 @@ nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(11,15,26,0.88);b
     padding-bottom: 0.2rem;
 }
 
+/* NAV RIGHT GROUP */
+.nav-right{display:flex;align-items:center;gap:0.25rem;}
+
 /* THEME TOGGLE */
 .theme-toggle {
     background: none;
@@ -316,7 +319,7 @@ section{padding:2.5rem 2rem;position:relative;z-index:1;}
 .approach-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.75rem 1.5rem;transition:all 0.25s;position:relative;overflow:hidden;}
 .approach-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--blue),var(--teal));opacity:0;transition:opacity 0.3s;}
 .approach-card:hover::before{opacity:1;}
-.approach-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.15);}
+.approach-card:hover{border-color:var(--border-hover);transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,0.12);}
 .approach-tag{font-size:0.62rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);margin-bottom:0.5rem;display:block;}
 .approach-card h3{font-family:'Outfit',sans-serif;font-size:1rem;font-weight:600;color:var(--white);margin-bottom:0.4rem;}
 .approach-card p{color:var(--text-dim);font-size:0.84rem;font-weight:300;line-height:1.65;}
@@ -324,7 +327,7 @@ section{padding:2.5rem 2rem;position:relative;z-index:1;}
 /* ===== DIFFERENTIATORS ===== */
 .diff-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
 .diff-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.75rem 1.5rem;transition:all 0.25s;}
-.diff-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.15);}
+.diff-card:hover{border-color:var(--border-hover);transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,0.12);}
 .diff-icon{width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;background:var(--blue-dim);}
 .diff-icon svg{width:20px;height:20px;stroke:var(--blue-light);fill:none;stroke-width:1.5;}
 .diff-card h3{font-family:'Outfit',sans-serif;font-size:1rem;font-weight:600;color:var(--white);margin-bottom:0.4rem;}
@@ -365,7 +368,7 @@ section{padding:2.5rem 2rem;position:relative;z-index:1;}
 /* ===== SPEAKING ===== */
 .speak-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
 .speak-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.5rem;transition:all 0.2s;}
-.speak-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.15);}
+.speak-card:hover{border-color:var(--border-hover);transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,0.12);}
 .speak-type{font-size:0.62rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);margin-bottom:0.4rem;}
 .speak-card h3{font-family:'Outfit',sans-serif;font-size:0.92rem;font-weight:600;color:var(--white);margin-bottom:0.3rem;}
 .speak-card p{font-size:0.78rem;color:var(--text-dim);line-height:1.5;font-weight:300;}
@@ -422,6 +425,14 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;position:relative;
 .foot-r a{color:var(--text-dim);text-decoration:none;font-size:0.78rem;transition:color 0.2s;}
 .foot-r a:hover{color:var(--white);}
 
+/* ===== QUICK FACTS ===== */
+.quick-facts{padding:1.5rem 2rem;position:relative;z-index:1;}
+.quick-facts-inner{max-width:1080px;margin:0 auto;display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;}
+.qf-item{display:flex;align-items:center;gap:0.5rem;}
+.qf-check{width:18px;height:18px;border-radius:50%;background:var(--green-dim);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.qf-check svg{width:11px;height:11px;stroke:var(--green);fill:none;stroke-width:2.5;}
+.qf-text{font-size:0.76rem;color:var(--text-dim);font-weight:500;}
+
 /* ===== LIGHT MODE POLISH ===== */
 .light-theme .approach-card,
 .light-theme .diff-card,
@@ -475,14 +486,14 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;position:relative;
 .light-theme ::selection { background: #2563eb; }
 
 /* ===== ANIMATIONS ===== */
-@keyframes su{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-.rv{opacity:0;transform:translateY(16px);transition:opacity 0.5s ease,transform 0.5s ease;}
+@keyframes su{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.rv{opacity:0;transform:translateY(8px);transition:opacity 0.6s ease,transform 0.6s ease;}
 .rv.v{opacity:1;transform:translateY(0);}
-.hero-inner>*{opacity:0;animation:su 0.6s ease forwards;}
-.hero-inner>*:nth-child(1){animation-delay:0.15s;}
-.hero-inner>*:nth-child(2){animation-delay:0.3s;}
-.hero-inner>*:nth-child(3){animation-delay:0.45s;}
-.hero-inner>*:nth-child(4){animation-delay:0.6s;}
+.hero-inner>*{opacity:0;animation:su 0.7s ease forwards;}
+.hero-inner>*:nth-child(1){animation-delay:0.1s;}
+.hero-inner>*:nth-child(2){animation-delay:0.2s;}
+.hero-inner>*:nth-child(3){animation-delay:0.3s;}
+.hero-inner>*:nth-child(4){animation-delay:0.4s;}
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:900px){
@@ -537,22 +548,24 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;position:relative;
             <a href="#credentials">Credentials</a>
             <a href="#contact">Contact</a>
         </div>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
-            <svg viewBox="0 0 24 24" id="themeIcon">
-                <circle cx="12" cy="12" r="5"/>
-                <line x1="12" y1="1" x2="12" y2="3"/>
-                <line x1="12" y1="21" x2="12" y2="23"/>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                <line x1="1" y1="12" x2="3" y2="12"/>
-                <line x1="21" y1="12" x2="23" y2="12"/>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-            </svg>
-        </button>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+                <svg viewBox="0 0 24 24" id="themeIcon">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+            </button>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </div>
 </nav>
 
@@ -1079,6 +1092,28 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;position:relative;
     </div>
 </div>
 
+<!-- ===== QUICK FACTS ===== -->
+<div class="quick-facts rv">
+    <div class="quick-facts-inner">
+        <div class="qf-item">
+            <div class="qf-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="qf-text">U.S. Citizen &mdash; No Sponsorship Required</span>
+        </div>
+        <div class="qf-item">
+            <div class="qf-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="qf-text">Remote, Hybrid, or Onsite</span>
+        </div>
+        <div class="qf-item">
+            <div class="qf-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="qf-text">Available for Travel</span>
+        </div>
+        <div class="qf-item">
+            <div class="qf-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="qf-text">8+ Years Agile Experience</span>
+        </div>
+    </div>
+</div>
+
 <!-- ===== CTA ===== -->
 <section class="cta" id="contact" aria-label="Contact">
     <div class="cta-label rv">Let's Talk</div>
@@ -1199,93 +1234,53 @@ function animateCounters() {
 
 // ===== GSAP SCROLL ANIMATIONS =====
 function initGSAPAnimations() {
-    // Approach cards - staggered reveal
-    gsap.utils.toArray('.approach-card').forEach((card, index) => {
-        gsap.fromTo(card, { opacity: 0, y: 30 }, {
-            scrollTrigger: {
-                trigger: card,
-                start: 'top 80%',
-                toggleActions: 'play none none none'
-            },
-            duration: 0.6,
+    // Shared gentle config
+    var soft = { opacity: 0, y: 12 };
+    var softIn = function(trigger, dur, del) {
+        return {
+            scrollTrigger: { trigger: trigger, start: 'top 85%', toggleActions: 'play none none none' },
+            duration: dur || 0.7,
             opacity: 1,
             y: 0,
-            delay: index * 0.1
-        });
+            delay: del || 0,
+            ease: 'power2.out'
+        };
+    };
+
+    // Approach cards
+    gsap.utils.toArray('.approach-card').forEach((card, i) => {
+        gsap.fromTo(card, soft, softIn(card, 0.7, i * 0.06));
     });
 
     // Diff cards
-    gsap.utils.toArray('.diff-card').forEach((card, index) => {
-        gsap.fromTo(card, { opacity: 0, y: 30 }, {
-            scrollTrigger: {
-                trigger: card,
-                start: 'top 80%',
-                toggleActions: 'play none none none'
-            },
-            duration: 0.6,
-            opacity: 1,
-            y: 0,
-            delay: index * 0.1
-        });
+    gsap.utils.toArray('.diff-card').forEach((card, i) => {
+        gsap.fromTo(card, soft, softIn(card, 0.7, i * 0.06));
     });
 
     // Results/stat cards
-    gsap.utils.toArray('.result').forEach((card, index) => {
-        gsap.fromTo(card, { opacity: 0, y: 30 }, {
-            scrollTrigger: {
-                trigger: card,
-                start: 'top 80%',
-                toggleActions: 'play none none none'
-            },
-            duration: 0.6,
-            opacity: 1,
-            y: 0,
-            delay: index * 0.1
-        });
+    gsap.utils.toArray('.result').forEach((card, i) => {
+        gsap.fromTo(card, soft, softIn(card, 0.7, i * 0.06));
     });
 
-    // Timeline items - slide in from left
-    gsap.utils.toArray('.t-item').forEach((item, index) => {
-        gsap.fromTo(item, { opacity: 0, x: -40 }, {
-            scrollTrigger: {
-                trigger: item,
-                start: 'top 80%',
-                toggleActions: 'play none none none'
-            },
-            duration: 0.7,
-            opacity: 1,
-            x: 0,
-            delay: index * 0.05
-        });
+    // Timeline items
+    gsap.utils.toArray('.t-item').forEach((item, i) => {
+        gsap.fromTo(item, soft, softIn(item, 0.7, i * 0.03));
     });
 
     // Speak cards
-    gsap.utils.toArray('.speak-card').forEach((card, index) => {
-        gsap.fromTo(card, { opacity: 0, y: 30 }, {
-            scrollTrigger: {
-                trigger: card,
-                start: 'top 80%',
-                toggleActions: 'play none none none'
-            },
-            duration: 0.6,
-            opacity: 1,
-            y: 0,
-            delay: index * 0.1
-        });
+    gsap.utils.toArray('.speak-card').forEach((card, i) => {
+        gsap.fromTo(card, soft, softIn(card, 0.7, i * 0.06));
     });
 
     // Cert badges
-    gsap.utils.toArray('.cert-badge').forEach((badge, index) => {
-        gsap.fromTo(badge, { opacity: 0, scale: 0.9 }, {
-            scrollTrigger: {
-                trigger: badge,
-                start: 'top 85%',
-                toggleActions: 'play none none none'
-            },
-            duration: 0.5,
+    gsap.utils.toArray('.cert-badge').forEach((badge, i) => {
+        gsap.fromTo(badge, { opacity: 0, y: 8 }, {
+            scrollTrigger: { trigger: badge, start: 'top 85%', toggleActions: 'play none none none' },
+            duration: 0.6,
             opacity: 1,
-            scale: 1,
-            delay: index * 0.05
+            y: 0,
+            delay: i * 0.04,
+            ease: 'power2.out'
         });
     });
 
@@ -1460,16 +1455,13 @@ window.addEventListener('load', function() {
 
     // Testimonial card animations
     gsap.utils.toArray('.testimonial-card').forEach(function(card, index) {
-        gsap.fromTo(card, { opacity: 0, y: 30 }, {
-            scrollTrigger: {
-                trigger: card,
-                start: 'top 80%',
-                toggleActions: 'play none none none'
-            },
-            duration: 0.6,
+        gsap.fromTo(card, { opacity: 0, y: 12 }, {
+            scrollTrigger: { trigger: card, start: 'top 85%', toggleActions: 'play none none none' },
+            duration: 0.7,
             opacity: 1,
             y: 0,
-            delay: index * 0.1
+            delay: index * 0.06,
+            ease: 'power2.out'
         });
     });
 });
