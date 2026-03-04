@@ -1,83 +1,88 @@
 # Changelog — Mike Miller Resume Site
 
+## [4.1] — 2026-03-04
+
+### UX Polish
+- **Softer animations**: Reduced scroll animation distances (12px vs 30px), gentler easing (`power2.out`), slower stagger.
+- **Consistent fade-up**: Timeline items now fade up like everything else (removed sideways snap).
+- **Softer hovers**: Cards lift 2px with lighter shadow instead of 3px.
+
+### Layout Fixes
+- **Nav alignment**: Fixed nav links drifting left when theme toggle was grouped with hamburger.
+- **Theme toggle position**: Stays right-aligned next to hamburger on mobile (wrapped in `.nav-right` group).
+
+### New Content
+- **Quick Facts strip**: Green-checkmark row above Contact — US Citizen, Remote/Hybrid/Onsite, Travel, 8+ Years.
+
+---
+
+## [4.0] — 2026-03-04
+
+### Bug Fixes
+- **Missing `$` on ~$1.7M stat**: Dollar sign was left out of the counter markup.
+- **Social sharing images**: Added `og:image` and `twitter:image` meta tags for LinkedIn/Twitter previews.
+- **JetBrains Mono font**: Was referenced in CSS but never loaded from Google Fonts.
+- **Theme toggle broken**: Now saves preference to localStorage, changes icon (sun/moon), disables mouse glow in light mode.
+- **Light mode nav bar stuck dark**: CSS selectors used `body.light-theme` but class was on `<html>`. Fixed to `.light-theme`.
+- **Broken GSAP animation**: Removed `gsap.to('.hero::after')` — GSAP can't animate pseudo-elements.
+- **Email link quirks**: Rebuilt with data attributes + JS so click and right-click both work.
+- **Structured data**: Added `worksFor: SAIC` to Person schema.
+- **GA comment**: Removed misleading "replace with your real ID" note.
+
+### New Content
+- **Testimonials section**: 5 LinkedIn recommendations with featured card layout (Tracey Valentine featured full-width).
+
+### Design
+- **Light mode polish**: Card shadows, button glow, refined color palette, cert badge contrast.
+- **Removed fake clickable cursors**: Cards no longer show pointer cursor since they aren't links.
+- **Removed 3D tilt effect**: Replaced wobbly card rotation with clean lift-on-hover.
+- **404 page rebranded**: Now uses same fonts (Inter/Outfit) and colors as main site.
+
+### Infrastructure
+- **Dark mode default**: Always starts dark. Removed OS preference detection.
+- **Footer credit**: "Built by Mike Miller Development" with link to mikemillerdevelopment.com.
+
+---
+
 ## [3.1] — 2026-02-28
 
 ### UX & Spacing
-- **Tighter section spacing**: Reduced section padding from 5.5rem to 3.5rem (2.5rem mobile). Less wasted scroll between sections.
-- **Nav shrink on scroll**: Nav bar subtly compresses padding when user scrolls down.
+- Tighter section spacing (3.5rem vs 5.5rem).
+- Nav shrink on scroll.
 
 ### Light Theme Overhaul
-- **Softer palette**: Light mode background shifted from harsh white to `#eef1f5` with SVG noise texture overlay.
-- **Nav stays dark**: Nav bar keeps its dark appearance in light mode (deliberate design choice, not a bug).
-- **Moon icon**: Theme toggle now swaps between sun and moon SVG icons.
-
-### Nav Branding
-- **MM. — Mike Miller**: Updated nav logo to MMD-style branding with gradient dot and em-dash separator.
-
-### "Clearing the Fog" Concept
-- **Fog overlay**: Semi-transparent mask layer that "clears" around the cursor, tying the mouse glow into the brand message ("I clear the fog so your teams can deliver").
-- **Enhanced mouse glow**: Larger, softer glow (400px, blur 60px) that works with the fog overlay.
+- Softer light mode palette.
+- Moon icon for theme toggle.
 
 ### New JS Interactivity
-- **Magnetic buttons**: CTA buttons subtly pull toward the cursor on hover.
-- **Gradient border glow**: Cards reveal a blue-to-teal gradient border on hover.
-- **Breathing box shadows**: Cards pulse with a subtle glow when in viewport.
-- **Floating cert badges**: Cert badges gently float up/down when visible.
-- **Tool pills stagger**: Tool & methodology pills cascade in with staggered delays.
-- **Company logo parallax**: Social proof logos subtly wave on scroll.
-- **Section heading reveals**: Section headers animate in with a slide-up reveal.
-- **Text shimmer**: Hero gradient text has a subtle shimmer animation.
-
-### Technical
-- File grew from ~1380 lines to ~1695 lines (new CSS animations + enhanced JS).
-- All original content preserved exactly.
+- Fog overlay, magnetic buttons, gradient border glow, breathing shadows, floating cert badges, tool pill stagger, company logo parallax, text shimmer.
 
 ---
 
 ## [3.0] — 2026-02-28
 
 ### Premium JavaScript Enhancements
-- **GSAP 3 + ScrollTrigger**: Replaced IntersectionObserver with GSAP for all scroll animations. Staggered card reveals, sliding timeline items, parallax on hero background glow.
-- **Animated stat counters**: Stats (39%, ~$1.7M, 100+, 12%) count up from 0 when scrolling into view.
-- **Hero typing animation**: The word "deliver" types out character by character with cursor blink.
-- **Dark/light theme toggle**: Sun/moon toggle in nav. Full light theme with white backgrounds, dark text, blue accents preserved. Smooth transitions.
-- **Scroll progress bar**: 3px blue-to-teal gradient bar at the very top showing scroll progress.
-- **Active nav highlighting**: Current section's nav link highlights as user scrolls.
-- **3D tilt hover effects**: Approach, diff, speak, and cert cards tilt subtly on mouse hover (3-4° max, perspective effect).
-- **Mouse glow cursor effect**: Subtle radial gradient glow follows the mouse across the dark background.
-- **Smooth scroll offset**: Nav links scroll to sections with offset for fixed nav height.
+- GSAP 3 + ScrollTrigger for all scroll animations.
+- Animated stat counters, hero typing animation.
+- Dark/light theme toggle, scroll progress bar, active nav highlighting.
+- 3D tilt hover effects, mouse glow cursor, smooth scroll offset.
 
 ### Documentation
-- **CONTENT.md**: Created single source of truth for all site copy. Any content changes should be made here first, then reflected in index.html.
-- **README.md**: Added developer workflow documentation.
-
-### Technical
-- Added GSAP 3.12.5 + ScrollTrigger from cdnjs CDN.
-- All original content preserved exactly (verified against CONTENT.md).
-- File grew from ~850 lines to ~1380 lines (JS enhancements).
+- Created CONTENT.md (single source of truth for copy).
+- Created README.md.
 
 ---
 
 ## [2.1] — 2026-02-28
-
-### Content Fix
-- Restored all original copy that was accidentally rewritten in v2.0.
-- Added blue `MM.` favicon matching MMD's style but with blue accent instead of purple.
+- Restored original copy accidentally rewritten in v2.0.
+- Added blue MM. favicon.
 
 ---
 
 ## [2.0] — 2026-02-28
-
-### Design Overhaul
-- **Color scheme**: Replaced single blue accent with blue-to-teal gradient system (inspired by MMD). Background shifted from `#0f1117` to deeper navy `#0b0f1a`. New token system with `--blue`, `--teal`, `--green`, `--gold` accents.
-- **Typography**: Swapped fonts from Source Serif 4 / Plus Jakarta Sans to **Outfit** (headings) + **Inter** (body) + **JetBrains Mono** (data/labels).
-- **Cert badges**: Hybrid approach — MMD-style gradient text badges arranged in MMRS card layout with full cert name + issuer. Color-coded by org.
-- **Hero section**: Dropped profile photo. Text-forward with gradient headline and dual CTAs.
-- **Grid background, card hover effects, staggered animations.**
+- Full design overhaul: blue-teal gradient palette, Outfit + Inter + JetBrains Mono fonts, hybrid cert badges, text-forward hero.
 
 ---
 
-## [1.0] — 2026-02-28 (tagged retroactively)
-
-### Initial Release
-- Original resume site with dark theme, single blue accent, Source Serif 4 + Plus Jakarta Sans fonts, SVG cert icons, profile photo hero.
+## [1.0] — 2026-02-28
+- Original site. Dark theme, single blue accent, Source Serif 4 + Plus Jakarta Sans, SVG cert icons, profile photo hero.
