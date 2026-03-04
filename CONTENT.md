@@ -3,6 +3,40 @@
 > **This file is the single source of truth for all text content on the resume site.**
 > When redesigning or restyling, pull copy from here — never rewrite it.
 > When Mike updates his content, update this file FIRST, then update index.html to match.
+> **Source:** Pulled from production at https://michaelmmiller.com (GitHub: themillermiller/michaelmmiller.com) on 2026-03-01.
+
+---
+
+## SEO & META (from production)
+
+**Title:** Mike Miller — Senior Scrum Master & Agile Leader | Delivery Expert
+**Description:** Mike Miller is a Senior Scrum Master and Agile Leader with 8+ years leading teams across government, medical, fintech, and retail. Expert in SAFe PI Planning, Monte Carlo forecasting, Agile transformation, and project recovery. Speaker at GE Agile Day, AgileCincy, and Taste of IT.
+**Keywords:** Senior Scrum Master, Agile Coach, Agile Leader, SAFe, LeSS, Kanban, Scrum, PI Planning, Monte Carlo Forecasting, Agile Transformation, Project Recovery, Scrum Master Mentor, Agile Consultant, BDD, TDD, CI/CD, DevOps, Mike Miller, Ohio, Dayton
+**Canonical:** https://michaelmmiller.com/
+**GA4 ID:** G-NGP153D8WS
+
+### Open Graph
+- og:type: profile
+- og:title: Mike Miller — Senior Scrum Master & Agile Leader
+- og:description: I clear the fog so your teams can deliver. Senior Scrum Master with 8+ years leading complex Agile transformations across government, medical, fintech, and retail.
+- og:image: https://michaelmmiller.com/mike-miller-senior-scrum-master.jpg
+- og:site_name: Mike Miller — Agile Leader
+- profile:first_name: Mike
+- profile:last_name: Miller
+
+### Twitter Card
+- twitter:card: summary_large_image
+- twitter:title: Mike Miller — Senior Scrum Master & Agile Leader
+- twitter:description: I clear the fog so your teams can deliver. 8+ years leading Agile transformations, rescuing delayed projects, and mentoring Scrum Masters.
+- twitter:image: https://michaelmmiller.com/mike-miller-senior-scrum-master.jpg
+
+### Structured Data (Production)
+- Person: worksFor SAIC, address OH/US, image mike-miller-senior-scrum-master.jpg
+- ProfessionalService: serviceType includes Agile Coaching, Scrum Master Mentorship, SAFe PI Planning, Project Recovery, Delivery Optimization
+
+### Assets
+- Hero photo: mike-miller-senior-scrum-master.jpg (260x320, used in production hero + OG/Twitter)
+- Production favicon: inline SVG, single blue "M" on dark bg (#0f1117 bg, #4e8fda text, Georgia serif)
 
 ---
 
@@ -197,6 +231,33 @@ Projects are foggy. Stakeholders want answers that can't be answered yet. **I br
 | Community  | AgileCincy                        | Active contributor to the Cincinnati Agile practitioner community.                  |
 | Enterprise | GE Agile Day                      | Invited speaker at General Electric's enterprise Agile transformation events.       |
 | C-Suite    | First Technology CIO Roundtable   | Presented to C-level technology leaders on Agile strategy and delivery excellence.  |
+
+---
+
+## TESTIMONIALS
+
+**Section Label:** What People Say
+**Heading:** From colleagues who've worked alongside me
+
+### 1 — Tracey Valentine (Featured, full-width)
+**Role:** Lead QA Analyst, Office & Home
+**Quote:** I worked with Mike while he held both the Scrum Master and Technical Project Manager positions. He has the most amazing attention to detail and focus with organization of projects. Mike is willing to do whatever it takes to get the job done. His ability to close the gap between groups, ensuring everyone is on the same page and issues are addressed in a timely manner so that each project can be successful. Mike also is the most genuinely caring, enthusiastic person with a 'go getter' attitude. He finds a learning experience in everything that helps the team be successful.
+
+### 2 — Kelsey Cooney, MBA, PMP
+**Role:** Director, Clinical Operations Business Services
+**Quote:** I worked closely with Mike during my time at Marxent on the Project and Account Management teams. He is very hard-working and his positive attitude makes him a pleasure to work with on a daily basis. He puts 110% effort into every project. His project planning and execution were very precise and he is always willing to fight to make sure every project was successful.
+
+### 3 — David Reke
+**Role:** Senior AI and Data Analyst
+**Quote:** Mike was the scrum master in a project I worked on at Smart Data in 2021. It was my first experience doing development in a professional team environment. Mike was a joy to work with and very patient with me as I had a lot of questions. He did a great job of leading team meetings and keeping us on schedule to complete our project in time.
+
+### 4 — Ryan Roche
+**Role:** Product @Webflow | Design-Led PM
+**Quote:** Mike is one of those coworkers that you enjoy seeing at work everyday. Not only does his work ethic and enthusiasm make him a great co-worker, but it's what makes him a great friend. Mike's journey as a Scrum Manager and Project Manager at Marxent showcases his commitment to the team and his career.
+
+### 5 — Cora S. Nicholson
+**Role:** Marketing Specialist
+**Quote:** It has been a pleasure to work and learn from Mike. He always brings enthusiasm and great attention to detail to his projects. He is very committed to his work and exceeds expectations every time. Mike is an extremely creative person, always prepared and able to roll with whatever the day throws his way.
 
 ---
 
